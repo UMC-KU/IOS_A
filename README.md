@@ -1,3 +1,7 @@
+![logo](https://user-images.githubusercontent.com/100466546/160417425-86fbd888-20bc-4289-90d8-9b019f733020.png)
+
+
+
 # IOS_A
 UMC 2기 IOS 스터디 A팀
 
