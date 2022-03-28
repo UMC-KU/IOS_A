@@ -1,5 +1,4 @@
-![logo](https://user-images.githubusercontent.com/100466546/160417425-86fbd888-20bc-4289-90d8-9b019f733020.png)
-
+![logo](https://user-images.githubusercontent.com/100466546/160418537-2d8610c5-869d-4845-a765-40c1b8aad634.png)
 
 
 # IOS_A
