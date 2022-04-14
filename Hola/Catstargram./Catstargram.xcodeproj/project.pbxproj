@@ -18,6 +18,13 @@
 		ACA4A64627F5944200BB2B50 /* UIVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4A64527F5944200BB2B50 /* UIVIewController.swift */; };
 		ACA4A64827F5DAF500BB2B50 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4A64727F5DAF500BB2B50 /* Color+Extension.swift */; };
 		ACA4A64A27F615AD00BB2B50 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4A64927F615AD00BB2B50 /* UserInfo.swift */; };
+		ACEDE3F4280802A30081EAB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDE3F3280802A30081EAB0 /* HomeViewController.swift */; };
+		ACEDE3F8280805770081EAB0 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDE3F6280805770081EAB0 /* FeedTableViewCell.swift */; };
+		ACEDE3F9280805770081EAB0 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEDE3F7280805770081EAB0 /* FeedTableViewCell.xib */; };
+		ACEDE3FE280870800081EAB0 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDE3FC280870800081EAB0 /* StoryTableViewCell.swift */; };
+		ACEDE3FF280870800081EAB0 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEDE3FD280870800081EAB0 /* StoryTableViewCell.xib */; };
+		ACEDE40228087F0E0081EAB0 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDE40028087F0E0081EAB0 /* StoryCollectionViewCell.swift */; };
+		ACEDE40328087F0E0081EAB0 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEDE40128087F0E0081EAB0 /* StoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		ACA4A64527F5944200BB2B50 /* UIVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewController.swift; sourceTree = "<group>"; };
 		ACA4A64727F5DAF500BB2B50 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		ACA4A64927F615AD00BB2B50 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		ACEDE3F3280802A30081EAB0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ACEDE3F6280805770081EAB0 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		ACEDE3F7280805770081EAB0 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		ACEDE3FC280870800081EAB0 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		ACEDE3FD280870800081EAB0 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		ACEDE40028087F0E0081EAB0 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		ACEDE40128087F0E0081EAB0 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,7 @@
 		AC76249427E09669001A6DC6 /* Catstargram */ = {
 			isa = PBXGroup;
 			children = (
+				ACEDE3F2280802870081EAB0 /* Home */,
 				AC76249527E09669001A6DC6 /* AppDelegate.swift */,
 				ACA4A64327F5905500BB2B50 /* UIview+Extension.swift */,
 				ACA4A64527F5944200BB2B50 /* UIVIewController.swift */,
@@ -115,6 +130,28 @@
 				AC7624A327E0966C001A6DC6 /* Info.plist */,
 			);
 			path = Catstargram;
+			sourceTree = "<group>";
+		};
+		ACEDE3F2280802870081EAB0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ACEDE3F5280805510081EAB0 /* Cell */,
+				ACEDE3F3280802A30081EAB0 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ACEDE3F5280805510081EAB0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ACEDE3F6280805770081EAB0 /* FeedTableViewCell.swift */,
+				ACEDE3F7280805770081EAB0 /* FeedTableViewCell.xib */,
+				ACEDE3FC280870800081EAB0 /* StoryTableViewCell.swift */,
+				ACEDE3FD280870800081EAB0 /* StoryTableViewCell.xib */,
+				ACEDE40028087F0E0081EAB0 /* StoryCollectionViewCell.swift */,
+				ACEDE40128087F0E0081EAB0 /* StoryCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7624A227E0966C001A6DC6 /* LaunchScreen.storyboard in Resources */,
+				ACEDE3F9280805770081EAB0 /* FeedTableViewCell.xib in Resources */,
 				AC76249F27E0966C001A6DC6 /* Assets.xcassets in Resources */,
+				ACEDE3FF280870800081EAB0 /* StoryTableViewCell.xib in Resources */,
+				ACEDE40328087F0E0081EAB0 /* StoryCollectionViewCell.xib in Resources */,
 				AC76249D27E09669001A6DC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,11 +291,15 @@
 				ACA4A63E27F4DD1B00BB2B50 /* LoginViewController.swift in Sources */,
 				ACA4A64827F5DAF500BB2B50 /* Color+Extension.swift in Sources */,
 				AC76249627E09669001A6DC6 /* AppDelegate.swift in Sources */,
+				ACEDE3FE280870800081EAB0 /* StoryTableViewCell.swift in Sources */,
+				ACEDE40228087F0E0081EAB0 /* StoryCollectionViewCell.swift in Sources */,
 				AC76249827E09669001A6DC6 /* SceneDelegate.swift in Sources */,
 				ACA4A64A27F615AD00BB2B50 /* UserInfo.swift in Sources */,
+				ACEDE3F4280802A30081EAB0 /* HomeViewController.swift in Sources */,
 				ACA4A64427F5905500BB2B50 /* UIview+Extension.swift in Sources */,
 				ACA4A64627F5944200BB2B50 /* UIVIewController.swift in Sources */,
 				ACA4A64027F4E27400BB2B50 /* RegisterViewController.swift in Sources */,
+				ACEDE3F8280805770081EAB0 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
