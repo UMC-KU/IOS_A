@@ -387,33 +387,55 @@
             </objects>
             <point key="canvasLocation" x="1598.5507246376812" y="64.955357142857139"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="k18-9D-ALX">
             <objects>
-                <viewController id="zjT-Wq-cRc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="zjT-Wq-cRc" customClass="ProfileViewController" customModule="Catstargram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sIn-Uh-Jnc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQr-Ez-MFx">
-                                <rect key="frame" x="147" y="424" width="120" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="umm-LB-fm5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="08A-Fy-ETb">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Mq-aE-S2x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EQr-Ez-MFx" firstAttribute="centerY" secondItem="sIn-Uh-Jnc" secondAttribute="centerY" id="CcL-DA-PBy"/>
-                            <constraint firstItem="EQr-Ez-MFx" firstAttribute="centerX" secondItem="sIn-Uh-Jnc" secondAttribute="centerX" id="jUH-z6-7kd"/>
+                            <constraint firstItem="umm-LB-fm5" firstAttribute="leading" secondItem="3Mq-aE-S2x" secondAttribute="leading" id="6fn-1C-u9D"/>
+                            <constraint firstItem="3Mq-aE-S2x" firstAttribute="bottom" secondItem="umm-LB-fm5" secondAttribute="bottom" id="Q0H-1d-zbC"/>
+                            <constraint firstItem="3Mq-aE-S2x" firstAttribute="trailing" secondItem="umm-LB-fm5" secondAttribute="trailing" id="faA-1D-pPl"/>
+                            <constraint firstItem="umm-LB-fm5" firstAttribute="top" secondItem="3Mq-aE-S2x" secondAttribute="top" id="kKJ-cF-OWf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="C7D-Uq-7Kq"/>
+                    <navigationItem key="navigationItem" id="jwm-mU-06n">
+                        <barButtonItem key="leftBarButtonItem" title="Nickname" id="ciy-Kf-zPD">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="line.3.horizontal" catalog="system" id="Rvo-8J-y8b">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="plus.app" catalog="system" id="1c4-Xx-1Vs">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profileCollectionView" destination="umm-LB-fm5" id="73l-Zy-KaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1v-AI-JjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3348" y="794"/>
+            <point key="canvasLocation" x="4257.971014492754" y="793.52678571428567"/>
         </scene>
         <!--Home-->
         <scene sceneID="zR7-P6-dmk">
@@ -512,7 +534,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="EZq-Dm-tEI" kind="relationship" relationship="viewControllers" id="kbq-Zv-mWm"/>
-                        <segue destination="zjT-Wq-cRc" kind="relationship" relationship="viewControllers" id="eIf-h0-EBz"/>
+                        <segue destination="HwX-M6-w2D" kind="relationship" relationship="viewControllers" id="eIf-h0-EBz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xT-df-c5s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -537,6 +559,25 @@
             </objects>
             <point key="canvasLocation" x="257" y="65"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="Tps-pI-T0r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HwX-M6-w2D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="C7D-Uq-7Kq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OFB-Ce-Y5C">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zjT-Wq-cRc" kind="relationship" relationship="rootViewController" id="5p4-rT-00Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVH-U4-Z2I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3347.826086956522" y="793.52678571428567"/>
+        </scene>
     </scenes>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
@@ -545,6 +586,8 @@
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
         <image name="ic_home_upload" width="512" height="512"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <namedColor name="disabledButtonColor">
             <color red="0.34900000691413879" green="0.79600000381469727" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
